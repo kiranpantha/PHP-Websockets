@@ -13,7 +13,7 @@ class echoServer extends WebSocketServer {
   //protected $maxBufferSize = 1048576; //1MB... overkill for an echo server, but potentially plausible for other applications.
   
   protected function process ($user, $message) {
-    $this->send($user,$message);
+    $this->send($user,$message."haha");
   }
   
   protected function connected ($user) {
